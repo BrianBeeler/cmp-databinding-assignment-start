@@ -1,1 +1,3 @@
-<p>game-control works!</p>
+    <button class="col-sm-4 btn btn-primary start-button" [disabled]="intervalId !== null" (click)="startInterval()">Start</button>  
+    <button class="col-sm-4 btn btn-primary stop-button" [disabled]="intervalId === null" (click)="stopInterval()">Stop</button>
+

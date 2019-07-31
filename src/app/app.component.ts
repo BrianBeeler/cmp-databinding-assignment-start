@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  nums: number[] = [];
+  
+
+  onNewNumber(num) {
+    console.log("onNewNumber", num);
+    
+    this.nums.push(num);
+  }
 }

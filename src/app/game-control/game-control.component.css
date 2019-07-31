@@ -1,0 +1,16 @@
+.start-button {
+    background-color: #7ebc59;
+    color: #eaeaea;
+}
+
+.stop-button {
+    background-color:#ee4f4f;
+    color: #eff3f6;
+}
+
+:host {
+    width: 100%;
+    display: justify-cont;
+    justify-content: space-around;
+    display: flex;
+}

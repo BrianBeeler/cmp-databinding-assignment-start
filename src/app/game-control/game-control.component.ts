@@ -16,14 +16,15 @@ export class GameControlComponent implements OnInit, OnDestroy {
 
   startInterval() {
     if (!this.intervalId) {
-      this.intervalId = window.setTimeout(() => {
+      this.intervalId = window.setInterval(() => {
         this.newNumber.emit(this.currentNumber++);
-      })
+      },2000)
     }
   }
 
   stopInterval() {
     window.clearInterval(this.intervalId);
+    this.intervalId = null;
   }
 
   constructor() { }
